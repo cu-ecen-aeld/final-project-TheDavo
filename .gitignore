@@ -1,0 +1,4 @@
+
+# Ignore Yocto builds
+build/
+tmp/
