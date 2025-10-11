@@ -2,3 +2,6 @@
 # Ignore Yocto builds
 build/
 tmp/
+
+# Do not ignore the local.conf file, at least until the custom image is made
+!build/conf/local.conf
