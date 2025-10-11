@@ -71,6 +71,12 @@ Reboot, and now root-based ssh is allowed. Outside of this course this method
 should only be allowed for debug purposes and is not generally a good practice
 to allow people to login in as root.
 
+# Running the App
+
+Once ssh'd (or simply booted with a monitor + keyboard setup) the app can be
+run by calling `bonnetmirror` if root, or `sudo bonnetmirror` if `sudo` is
+installed and the user logged in does not have privileges.
+
 # Links
 
 Project Wiki: https://github.com/cu-ecen-aeld/final-project-TheDavo/wiki
