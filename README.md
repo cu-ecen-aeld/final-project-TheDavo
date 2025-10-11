@@ -16,6 +16,19 @@ setups.
 To share the setup, a copy of it is tracked in the top directory with the
 filename `build_local.conf`.
 
+The image based to build this is `core-image-base` which works as a good base
+for a Raspberry Pi target. After the shell is initialzed by sourcing the
+`oe-init-build-env` file within the `poky` directory, build the image.
+
+```sh
+bitbake core-image-base
+```
+
+The images can then be found in `build/tmp/deploy/images/raspberrypi4`.
+
+RPi Imager was used to flash the contents of the `.rpi-sdimg` file to an SD
+card to create the bootable setup.
+
 # Setting Up WiFi
 
 This project uses WiFi to send data through local IP from the Raspberry Pi to
@@ -77,7 +90,7 @@ Once ssh'd (or simply booted with a monitor + keyboard setup) the app can be
 run by calling `bonnetmirror` if root, or `sudo bonnetmirror` if `sudo` is
 installed and the user logged in does not have privileges.
 
-# Links
+# Wiki Linki
 
 Project Wiki: https://github.com/cu-ecen-aeld/final-project-TheDavo/wiki
 
